@@ -1,11 +1,19 @@
 .footer {
-    position: relative;
-    clear:both;
-    padding: 20px;
+    position: fixed;
+    height: 70px;
     bottom: 0;
-    right: 0;
+    width: 100%;
+    padding-top: 15px;
     text-align: center;
     color: white;
     background-color: #778899;
     border-top: 10px solid #20b2aa;
   } 
+
+  #ryanPic {
+    padding-bottom: 10px;
+  }
+
+  .hero {
+    margin-bottom: 30px;
+  }

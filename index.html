@@ -16,7 +16,7 @@
     <title>Ryan Lacon's Portfolio Site</title>
 </head>
 
-<body background="images/papyrus.png">
+<body background="images/lightpaperfibers.png">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark border-bottom" style="background-color: #778899">
         <div class="container">
@@ -34,10 +34,8 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                     <a style="padding-left: 10px; padding-right: 10px; margin-left: 10px;"
-                        class="nav-item nav-link active" href="index.html">About<span
+                        class="nav-item nav-link active" href="index.html">Home<span
                             class="sr-only">(current)</span></a>
-                    <a style="padding-left: 10px; padding-right: 10px; margin-left: 10px;" class="nav-item nav-link"
-                        href="portfolio.html">Portfolio</a>
                     <a style="padding-left: 10px; padding-right: 15px; margin-left: 10px;" class="nav-item nav-link"
                         href="contact.html">Contact</a>
 
@@ -58,38 +56,86 @@
     <br>
 
     <!-- Landing page banner -->
-    <div class="container">
-        <div class="jumbotron border rounded-lg bg-white p-4">
-            <div class="row">
-                <div class="col-12">
-                    <h2><span style="color:lightseagreen">About Me</span></h2>
-                </div>
-            </div>
+
+    <section class="hero">
+        <div class="container">
             <br>
             <div class="row">
-                <div class="col-lg-4 col-md-12">
+
+                <div class="col-lg-4 col-m-6 col-sm-12">
                     <img id="ryanPic" src="images/me.jpg" alt="A photo of Ryan Lacon wearing glasses and a sweater.">
-                    <br><br>
                 </div>
-                <div class="col-lg-8 col-md-12">
-                    <p class="lead">I'm a developer based out of Philadelphia, PA, with
-                        an M.S. in UX Design from Jefferson University. After graduating in December 2018, I wanted to advance my
-                        studies and enrolled in a coding boot camp at Penn LPS.<br><br>
 
-                        I've always loved coding because it agrees with my analytical mindset and satisfies my
-                        craving to solve problems with technology. There's nothing more gratifying to me than fixing a
-                        line of code and getting something working.<br><br>
+                <div class="col-lg-8 col-m-6 col-sm-12">
+                    <h1 class="hero__title">
+                        I'm Ryan Lacon,
+                        a developer and UX designer
+                        living
+                        in Philadelphia, PA.
+                    </h1>
+                    <br>
+                    <p class="text-lg-left">After graduating with my M.S. in UX Design from Jefferson University, I
+                        wanted to advance my studies and enrolled in a coding boot camp at Penn LPS. I've always loved
+                        coding because it agrees
+                        with my analytical mindset and satisfies my craving to solve problems with technology.<br><br>
 
-                        I'm searching for a new developer role when I graduate in September—I'd love to work on a
-                        collaborative team, with plenty of opportunities to learn all about code.<br><br>
-                        <a class="btn btn-primary btn-lg" style="background:lightseagreen; border-color: lightseagreen"
-                            ; href="portfolio.html" role="btn btn-primary btn-lg">View my work</a>
-                    </p>
+                        I'm searching for a new developer role when I graduate in September&mdash;I'd love to work on a
+                        collaborative team, with plenty of opportunities to learn all about code.</p>
                 </div>
             </div>
         </div>
-    </div>
-    <br><br>
+
+        <!-- Featured Work -->
+
+        <div class="album py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="hero__title">Featured work</h1>
+                        <br>
+                    </div>
+
+
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a target="_blank" href="https://rlacon.github.io/Word-Guess-Game/">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" src="images/word-guess-game-pic.png" alt="Card image cap">
+                                <div class="card-body" style="background-color: #20b2aa">
+                                    <div class="d-flex justify-content-between align-items-center text-white">
+                                        <h5 class="card-text">Word Guess Game - JavaScript</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a target="_blank" href="http://www.laconspharmacy.com/">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" src="images/lacons-pharmacy-pic.png" alt="Card image cap">
+                                <div class="card-body" style="background-color: #20b2aa">
+                                    <div class="d-flex justify-content-between align-items-center text-white">
+                                        <h5 class="card-text">Responsive Site - HTML/CSS</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a target="_blank" href="https://rlacon.github.io/unit-4-game/">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" src="images/crystal-collector-pic.png" alt="Card image cap">
+                                <div class="card-body" style="background-color: #20b2aa">
+                                    <div class="d-flex justify-content-between align-items-center text-white">
+                                        <h5 class="card-text">Clicker Game - jQuery</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+    </section>
 
     <!-- Footer -->
     <div class="footer">
@@ -98,6 +144,9 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="assets/js/portfolio.js"></script>
 </body>
 
 </html>
