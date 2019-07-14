@@ -6,12 +6,9 @@
   color: #333333;
 }
 
-h2 {
-  color: white;
-}
-
 .nav-title {
   color: white;
+  font-family:
 }
 
 .featured-work-title {
@@ -32,5 +29,27 @@ h2 {
 }
 
 #logo {
-  height: 70px;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: .2;
+}
+
+/* sm */
+@media screen and (max-width: 768px) {
+  .album {
+    margin-top: 1em;
+  }
+  .hero {
+    margin-top: 0em;
+  }
+}
+
+/* md */
+@media screen and (max-width: 992px) {
+  .album {
+    margin-top: 1em;
+  }
+  .hero {
+    margin-top: 0em;
+  }
 }
