@@ -1,19 +1,36 @@
-.footer {
-    position: fixed;
-    height: 70px;
-    bottom: 0;
-    width: 100%;
-    padding-top: 15px;
-    text-align: center;
-    color: white;
-    background-color: #778899;
-    border-top: 10px solid #20b2aa;
-  } 
+#ryanPic {
+  padding-bottom: 10px;
+}
 
-  #ryanPic {
-    padding-bottom: 10px;
-  }
+.card-text {
+  color: #333333;
+}
 
-  .hero {
-    margin-bottom: 30px;
-  }
+h2 {
+  color: white;
+}
+
+.nav-title {
+  color: white;
+}
+
+.featured-work-title {
+  color: #5d5d5d;
+}
+
+.album {
+  background-color: #fbfbfb;
+  margin-top: 4em;
+}
+
+.hero {
+  margin-top: 1.5em;
+}
+
+.navbar {
+  background-color: lightslategray;
+}
+
+#logo {
+  height: 70px;
+}

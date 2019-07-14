@@ -16,12 +16,12 @@
     <title>Ryan Lacon's Portfolio Site</title>
 </head>
 
-<body background="images/lightpaperfibers.png">
+<body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark border-bottom" style="background-color: #778899">
+    <nav class="navbar navbar-expand-sm navbar-dark py-2">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <h1><span style="background:lightseagreen; padding: 22px">Ryan Lacon</span></h1>
+            <a href="index.html">
+                <img id="logo" src="images/code_icon.svg" alt="open and close coding tag icon"></img>
             </a>
 
             <!-- Hamburger Menu -->
@@ -33,20 +33,13 @@
             <!-- Nav Links -->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a style="padding-left: 10px; padding-right: 10px; margin-left: 10px;"
-                        class="nav-item nav-link active" href="index.html">Home<span
-                            class="sr-only">(current)</span></a>
+
 
                     <!-- Social Icons -->
-                    <a style="padding-left: 15px; padding-right: 15px; margin-left: 15px;" target="_blank"
-                        class="btn btn-social-icon btn-github" href="https://github.com/rlacon"><span
-                            class="fa fa-github"></span></a>
-                    <a style="padding-left: 15px; padding-right: 15px; margin-left: 15px;" target="_blank"
-                        class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/ryanlacon/"><span
-                            class="fa fa-linkedin"></span></a>
-                    <a style="padding-left: 15px; padding-right: 15px; margin-left: 15px;" target="_blank"
-                        class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/ryanshootz/"><span
-                            class="fa fa-instagram"></span></a>
+                    <a style="margin-right: 20px;" target="_blank" class="btn btn-social-icon btn-lg btn-github"
+                        href="https://github.com/rlacon"><span class="fa fa-github"></span></a>
+                    <a style="margin-right: 20px;" target="_blank" class="btn btn-social-icon btn-lg btn-linkedin"
+                        href="https://www.linkedin.com/in/ryanlacon/"><span class="fa fa-linkedin"></span></a>
                 </div>
             </div>
         </div>
@@ -59,13 +52,12 @@
         <div class="container">
             <br>
             <div class="row">
-
                 <div class="col-lg-4 col-m-6 col-sm-12">
                     <img id="ryanPic" src="images/me.jpg" alt="A photo of Ryan Lacon wearing glasses and a sweater.">
                 </div>
-
+                
                 <div class="col-lg-8 col-m-6 col-sm-12">
-                    <h1 class="hero__title">
+                    <h1 class="hero_title">
                         I'm Ryan Lacon,
                         a developer and UX designer
                         living
@@ -73,7 +65,8 @@
                     </h1>
                     <br>
                     <p class="text-lg-left">After graduating with my M.S. in UX Design from Jefferson University, I
-                        wanted to advance my studies and enrolled in a coding boot camp at <a target="blank" href="https://bootcamp.sas.upenn.edu/">Penn LPS</a>. I've always loved
+                        wanted to advance my studies and enrolled in a coding boot camp at <a target="blank"
+                            href="https://bootcamp.sas.upenn.edu/">Penn LPS</a>. I've always loved
                         coding because it agrees
                         with my analytical mindset and satisfies my craving to solve problems with technology.<br><br>
 
@@ -90,16 +83,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="hero__title">Featured work</h2>
+                        <h2 class="featured-work-title">Featured work</h2>
                         <br>
                     </div>
 
 
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                         <a target="_blank" href="https://rlacon.github.io/Word-Guess-Game/">
-                            <div class="card mb-4 box-shadow">
-                                <img class="card-img-top" src="images/word-guess-game-pic.png" alt="Text displaying a hangman game">
-                                <div class="card-body" style="background-color: #20b2aa">
+                            <div class="shadow mb-4 bg-white rounded">
+                                <img class="card-img-top" src="images/word-guess-game-pic.png"
+                                    alt="Text displaying a hangman game">
+                                <div class="card-body" style="background-color: white">
                                     <div class="d-flex justify-content-between align-items-center text-white">
                                         <h5 class="card-text">Word Guess Game - JavaScript</h5>
                                     </div>
@@ -110,9 +104,10 @@
 
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                         <a target="_blank" href="http://www.laconspharmacy.com/">
-                            <div class="card mb-4 box-shadow">
-                                <img class="card-img-top" src="images/lacons-pharmacy-pic.png" alt="Screenshot of website for a pharmacy">
-                                <div class="card-body" style="background-color: #20b2aa">
+                            <div class="shadow mb-4 bg-white rounded">
+                                <img class="card-img-top" src="images/lacons-pharmacy-pic.png"
+                                    alt="Screenshot of website for a pharmacy">
+                                <div class="card-body" style="background-color: white">
                                     <div class="d-flex justify-content-between align-items-center text-white">
                                         <h5 class="card-text">Responsive Site - HTML/CSS</h5>
                                     </div>
@@ -123,9 +118,10 @@
 
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                         <a target="_blank" href="https://rlacon.github.io/unit-4-game/">
-                            <div class="card mb-4 box-shadow">
-                                <img class="card-img-top" src="images/crystal-collector-pic.png" alt="Row of crystals with game instructions and score listed">
-                                <div class="card-body" style="background-color: #20b2aa">
+                            <div class="shadow mb-4 bg-white rounded">
+                                <img class="card-img-top" src="images/crystal-collector-pic.png"
+                                    alt="Row of crystals with game instructions and score listed">
+                                <div class="card-body" style="background-color: white">
                                     <div class="d-flex justify-content-between align-items-center text-white">
                                         <h5 class="card-text">Clicker Game - jQuery</h5>
                                     </div>
@@ -136,9 +132,10 @@
 
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                         <a target="_blank" href="https://rlacon.github.io/TriviaGame/">
-                            <div class="card mb-4 box-shadow">
-                                <img class="card-img-top" src="images/videoGameTrivia-pic.png" alt="List of trivia questions and radio buttons">
-                                <div class="card-body" style="background-color: #20b2aa">
+                            <div class="shadow mb-4 bg-white rounded">
+                                <img class="card-img-top" src="images/video-game-trivia-pic.png"
+                                    alt="List of trivia questions and radio buttons">
+                                <div class="card-body" style="background-color: white">
                                     <div class="d-flex justify-content-between align-items-center text-white">
                                         <h5 class="card-text">Trivia Game - JavaScript</h5>
                                     </div>
@@ -149,9 +146,10 @@
 
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                         <a target="_blank" href="https://rlacon.github.io/giphy-api/">
-                            <div class="card mb-4 box-shadow">
-                                <img class="card-img-top" src="images/giphy-api-pic.png" alt="Line up of giphy elements from the Simpsons tv show">
-                                <div class="card-body" style="background-color: #20b2aa">
+                            <div class="shadow mb-4 bg-white rounded">
+                                <img class="card-img-top" src="images/giphy-api-pic.png"
+                                    alt="Line up of giphy elements from the Simpsons tv show">
+                                <div class="card-body" style="background-color: white">
                                     <div class="d-flex justify-content-between align-items-center text-white">
                                         <h5 class="card-text">Giphy API - JavaScript</h5>
                                     </div>
@@ -162,9 +160,10 @@
 
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                         <a target="_blank" href="https://rlacon.github.io/train-time/">
-                            <div class="card mb-4 box-shadow">
-                                <img class="card-img-top" src="images/Train-Scheduler-Pic.png" alt="Train scheduler with table with train data and form">
-                                <div class="card-body" style="background-color: #20b2aa">
+                            <div class="shadow mb-4 bg-white rounded">
+                                <img class="card-img-top" src="images/train-scheduluer-pic.png"
+                                    alt="Train scheduler with table with train data and form">
+                                <div class="card-body" style="background-color: white">
                                     <div class="d-flex justify-content-between align-items-center text-white">
                                         <h5 class="card-text">Train Scheduler - Firebase & JS</h5>
                                     </div>
