@@ -10,6 +10,10 @@ p {
   color: #333333;
 }
 
+.btn-block {
+  width: 500px;
+  justify-content: center
+}
 .nav-title {
   color: white;
 }
@@ -23,10 +27,24 @@ h5 {
   color: #5d5d5d;
 }
 
+.contact-info {
+  color: #5d5d5d;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
 .album {
   background-color: #fbfbfb;
   margin-top: 4em;
 }
+
+.contact-container {
+  margin-top: 4em;
+  margin-bottom: 6em;
+}
+
+
 
 .hero {
   margin-top: 1.5em;
@@ -34,10 +52,6 @@ h5 {
 
 .navbar {
   background-color: lightslategray;
-}
-
-h2 {
-  text-decoration: none;
 }
 
 #logo {
@@ -63,6 +77,15 @@ h2 {
     margin-bottom: 5px;
 
   }
+
+  .btn-block {
+    margin-bottom: 1em;
+    width: 75%;
+  }
+  .contact-container {
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
 }
 
 /* md */
@@ -79,5 +102,12 @@ h2 {
   .btn-social-icon {
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+  .btn-block {
+    margin-bottom: 1em;
+  }
+  .contact-container {
+    margin-top: 2em;
+    margin-bottom: 3em;
   }
 }
