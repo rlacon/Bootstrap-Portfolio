@@ -1,14 +1,22 @@
 #ryanPic {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
-.card-text {
+h1 {
+  color: #333333;
+}
+
+p {
   color: #333333;
 }
 
 .nav-title {
   color: white;
-  font-family:
+}
+
+h5 {
+  text-align: center;
+  color: #333333;
 }
 
 .featured-work-title {
@@ -28,16 +36,21 @@
   background-color: lightslategray;
 }
 
+h2 {
+  text-decoration: none;
+}
+
 #logo {
   color: white;
   font-size: 3rem;
   margin-bottom: .2;
+  text-decoration: none;
 }
 
 /* sm */
 @media screen and (max-width: 768px) {
   .album {
-    margin-top: 1em;
+    margin-top: 0em;
   }
   .hero {
     margin-top: 0em;
