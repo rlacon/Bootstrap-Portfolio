@@ -14,8 +14,17 @@ p {
   width: 500px;
   justify-content: center
 }
+
 .nav-title {
   color: white;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 h5 {
@@ -44,30 +53,32 @@ h5 {
   margin-bottom: 6em;
 }
 
-
-
 .hero {
-  margin-top: 1.5em;
+  margin-top: 5.5em;
 }
 
 .navbar {
   background-color: lightslategray;
 }
 
+.nav-link {
+  color: white;
+}
+
 #logo {
   color: white;
-  font-size: 3rem;
-  margin-bottom: .2;
+  font-size: 2.5rem;
   text-decoration: none;
 }
 
 /* sm */
+
 @media screen and (max-width: 768px) {
   .album {
     margin-top: 0em;
   }
   .hero {
-    margin-top: 0em;
+    margin-top: 3em;
   }
   .hero_title {
     padding-top: 15px;
@@ -75,9 +86,11 @@ h5 {
   .btn-social-icon {
     margin-top: 5px;
     margin-bottom: 5px;
-
   }
-
+  .nav-link {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
   .btn-block {
     margin-bottom: 1em;
     width: 75%;
@@ -89,17 +102,22 @@ h5 {
 }
 
 /* md */
+
 @media screen and (max-width: 992px) {
   .album {
     margin-top: 1em;
   }
   .hero {
-    margin-top: 0em;
+    margin-top: 4em;
   }
   .hero_title {
     padding-top: 15px;
   }
   .btn-social-icon {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .nav-link {
     margin-top: 5px;
     margin-bottom: 5px;
   }
