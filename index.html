@@ -13,6 +13,11 @@
     <!-- Media Query -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+    </style>
+
     <title>Ryan Lacon's Portfolio Site</title>
 </head>
 
@@ -47,7 +52,7 @@
     </nav>
     <br>
 
-    <!-- Landing page banner -->
+    <!-- Hero section -->
 
     <section class="hero">
         <div class="container">
@@ -58,14 +63,14 @@
                 </div>
 
                 <div class="col-lg-8 col-m-6 col-sm-12">
-                    <h1 class="hero_title">
+                    <h1 id="hero_title">
                         I'm Ryan Lacon,
                         a developer and UX designer
                         living
                         in Philadelphia, PA.
                     </h1>
                     <br>
-                    <p class="text-lg-left">After graduating with my M.S. in UX Design from Jefferson University, I
+                    <p>After graduating with my M.S. in UX Design from Jefferson University, I
                         wanted to advance my studies and enrolled in a coding boot camp at <a target="blank"
                             href="https://bootcamp.sas.upenn.edu/">Penn LPS</a>. I've always loved
                         coding because it agrees
@@ -76,8 +81,49 @@
                 </div>
             </div>
         </div>
-        <br>
     </section>
+
+
+    <!-- Description container -->
+    <div class="container descriptionContainer">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="contact-info">What I can do</h1>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="description_div">
+                        <p class="intro_description_title">UX Research</p>
+                        <p class="description-text">Competitive analyses, surveys, user interviews, and prototypes are
+                            some of the techniques that help me get to the root of the problem. I always ensure the
+                            design process is strategic and will address all user needs and business requirements.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+
+                    <div class="description_div">
+                        <p class="intro_description_title">UI Design</p>
+                        <p class="description-text">My design background has made me grow attuned to crucial elements
+                            such as
+                            typography, information architecture, and color theory. I strive for all my designs to look
+                            visually pleasing and communicate all information accessibly.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+
+                    <div class="description_div">
+                        <p class="intro_description_title">Coding</p>
+                        <p class="description-text">By combining all of these skills, I can quickly bring your products
+                            to life using HTML, CSS, and JavaScript. My close attention to detail ensures your sites and
+                            applications will resemble the specifications as closely as possible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
 
     <!-- Featured Work -->
 
@@ -85,7 +131,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="featured-work-title" style="text-decoration: none">Featured work</h2>
+                    <h1 class="featured-work-title" style="text-decoration: none">Featured work</h1>
                     <br>
                 </div>
 
@@ -190,11 +236,12 @@
             </div>
         </div>
     </div>
+
     <div class="contact-container">
         <div class="container" id="contact">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="contact-info">If you'd like to contact me</h2>
+                    <h1 class="contact-info">If you'd like to contact me</h1>
                 </div>
             </div>
 

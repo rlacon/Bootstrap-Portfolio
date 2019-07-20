@@ -1,23 +1,4 @@
-#ryanPic {
-  border-radius: 6px;
-}
-
-h1 {
-  color: #333333;
-}
-
-p {
-  color: #333333;
-}
-
-.btn-block {
-  width: 500px;
-  justify-content: center
-}
-
-.nav-title {
-  color: white;
-}
+/* --------------- Primary Elements --------------- */
 
 .fixed-nav {
   position: fixed;
@@ -27,81 +8,142 @@ p {
   z-index: 1030;
 }
 
-h5 {
-  text-align: center;
-  color: #333333;
-}
-
-.featured-work-title {
-  color: #5d5d5d;
-}
-
-.contact-info {
-  color: #5d5d5d;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 1em;
-}
-
-.album {
-  background-color: #fbfbfb;
-  margin-top: 4em;
-}
-
-.contact-container {
-  margin-top: 4em;
-  margin-bottom: 6em;
+.navbar {
+  background-color: lightslategray;
 }
 
 .hero {
   margin-top: 5.5em;
 }
 
-.navbar {
-  background-color: lightslategray;
+.album {
+  background-color: #fbfbfb;
 }
 
-.nav-link {
+.descriptionContainer {
+  padding: 80px 0;
+}
+
+/* --------------- Images --------------- */
+
+#ryanPic {
+  border-radius: 6px;
+}
+
+/* --------------- Card Elements --------------- */
+
+.card-text {
+  font-family: 'Lato', sans-serif;
+}
+
+.description-text {
   color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.intro_description_title {
+  color: white;
+  background: #00D0B8;
+  font-family: "Lato", sans-serif;
+  font-size: 1.25em;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.description_div {
+  background: lightslategray;
+  border-radius: 6px;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  padding: 30px;
+}
+
+/* --------------- Text Elements --------------- */
+
+#hero_title {
+  color: #333333;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+h5 {
+  text-align: center;
+  color: #333333;
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  color: #333333;
+  font-family: 'Lato', sans-serif;
+}
+
+.text-lg-left {
+  color: #333333;
+  font-family: 'Lato', sans-serif;
+}
+
+.text-lg-left {
+  color: #333333;
+  font-family: 'Lato', sans-serif;
 }
 
 #logo {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
-/* sm */
-
-@media screen and (max-width: 768px) {
-  .album {
-    margin-top: 0em;
-  }
-  .hero {
-    margin-top: 3em;
-  }
-  .hero_title {
-    padding-top: 15px;
-  }
-  .btn-social-icon {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .nav-link {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .btn-block {
-    margin-bottom: 1em;
-    width: 75%;
-  }
-  .contact-container {
-    margin-top: 2em;
-    margin-bottom: 3em;
-  }
+.nav-link {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
-/* md */
+.featured-work-title {
+  color: #5d5d5d;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.contact-info {
+  color: #5d5d5d;
+  display: flex;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  padding: 80px 0;
+}
+
+/* --------------- Blocks --------------- */
+
+.contact-container {
+  margin-bottom: 6em;
+}
+
+#ux_description_div {
+  width: 18rem;
+}
+
+/* --------------- Buttons --------------- */
+
+.btn-block {
+  width: 500px;
+  justify-content: center
+}
+
+.btn, .btn-primary {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+/* --------------- Media Queries --------------- */
 
 @media screen and (max-width: 992px) {
   .album {
@@ -110,7 +152,7 @@ h5 {
   .hero {
     margin-top: 4em;
   }
-  .hero_title {
+  #hero_title {
     padding-top: 15px;
   }
   .btn-social-icon {
@@ -127,5 +169,50 @@ h5 {
   .contact-container {
     margin-top: 2em;
     margin-bottom: 3em;
+  }
+  .description_div {
+    display: block;
+    margin: 15px auto 0 auto;
+    width: 300px;
+    height: auto;
+    margin-top: 40px;
+  }
+  .contact-info {
+    padding: 30px 0;
+  }
+  .featured-work-title {
+    padding: 30px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .album {
+    margin-top: 0em;
+  }
+  .hero {
+    margin-top: 3em;
+  }
+  #hero_title {
+    padding-top: 15px;
+  }
+  .btn-social-icon {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .nav-link {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .btn-block {
+    margin-bottom: 1em;
+    margin-top: .5em;
+    width: 75%;
+  }
+  .contact-container {
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
+  .contact-info {
+    padding: 30px 0;
   }
 }
