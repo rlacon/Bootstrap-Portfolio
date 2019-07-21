@@ -1,10 +1,7 @@
 /* --------------- Primary Elements --------------- */
-.navbar {
-  background: linear-gradient(160deg, #667EEA, #764BA2);
-}
 
 #hero {
-  margin-top: 50px;
+  margin-top: 125px;
   margin-bottom: 100px;
 }
 
@@ -24,6 +21,20 @@
 .projects {
   text-align: center;
   margin-bottom: 25px;
+}
+
+header {
+  background: linear-gradient(160deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9));
+  z-index: 9999;
+  height: 68px;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+
+.nav-up {
+  top: -68px;
 }
 
 /* --------------- Images --------------- */
@@ -182,7 +193,7 @@ p {
     margin-top: 1em;
   }
   #hero {
-    margin-top: 0px;
+    margin-top: 80px;
     margin-bottom: 0px;
   }
   #hero_title {
@@ -233,9 +244,7 @@ p {
   .album {
     margin-top: 0em;
   }
-  #hero {
-    margin-top: 0px;
-  }
+
   #hero_title {
     padding-top: 15px;
   }
