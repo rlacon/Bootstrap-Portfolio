@@ -5,7 +5,7 @@
 }
 
 #hero {
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .descriptionContainer {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 #work {
@@ -24,7 +24,7 @@
 
 .projects {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .image:after {
@@ -206,7 +206,7 @@ p {
     margin-bottom: 5px;
   }
   .btn-block {
-    margin-bottom: 1em;
+    margin-top: 25px;
   }
   .contact-container {
     margin-top: 40px;    
@@ -228,7 +228,7 @@ p {
 
 
   .subheader-text {
-    padding-bottom: 20px;
+    padding-bottom:0px;
   }
 
   .descriptionContainer {
@@ -261,10 +261,7 @@ p {
     margin-top: 25px;
     width: 75%;
   }
-  .contact-container {
-    margin-top: 2em;
-    margin-bottom: 3em;
-  }
+
   .contact-info {
     padding: 30px 0;
   }
