@@ -1,19 +1,12 @@
 /* --------------- Primary Elements --------------- */
 
-.fixed-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
 .navbar {
-  background-color: lightslategray;
+  background: linear-gradient(160deg, #667EEA, #764BA2);
 }
 
 #hero {
-  margin-top: 5.5em;
+  margin-top: 80px;
+  margin-bottom: 100px;
 }
 
 .album {
@@ -25,12 +18,46 @@
 }
 
 #work {
+  padding-bottom: 40px;
   margin-bottom: 40px;
 }
+
+.projects {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.image:after {
+  content: '\A';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.image:hover:after {
+  opacity: 1;
+}
+
 /* --------------- Images --------------- */
 
 #ryanPic {
   border-radius: 6px;
+}
+
+.icon_container {
+  margin: 0px auto 20px auto;
+  width: 50px;
+}
+
+.description_icon {
+  width: 100%;
+  height: 60px;
 }
 
 /* --------------- Card Elements --------------- */
@@ -46,17 +73,15 @@
 
 .intro_description_title {
   color: white;
-  background: #00D0B8;
   font-family: "Lato", sans-serif;
   font-size: 1.25em;
   margin: 0;
-  padding: 10px 0;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .description_div {
-  background: lightslategray;
+  background: linear-gradient(160deg, #00D0B8, #7DD198);
   border-radius: 6px;
   height: auto;
   overflow: hidden;
@@ -95,7 +120,7 @@ p {
 
 #logo {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.3 rem;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -108,20 +133,21 @@ p {
 }
 
 .featured-work-title {
-  color: #5d5d5d;
+  color: #667EEA;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-align: center;
-  padding: 20px 0;
+  padding: 50px 0 30px;
+  margin-bottom: 0;
 }
 
-.contact-info {
-  color: #5d5d5d;
+.subheader-text {
+  color: #00D0B8;
   display: flex;
   justify-content: center;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
 /* --------------- Blocks --------------- */
@@ -134,16 +160,28 @@ p {
   width: 18rem;
 }
 
+.descriptionContainer {
+  margin-top: 100px;
+  padding-top: 0px;
+  margin-bottom: 100px;
+}
+
 /* --------------- Buttons --------------- */
 
 .btn-block {
   width: 500px;
-  justify-content: center
+  justify-content: center;
+  background: linear-gradient(160deg, #00D0B8, #7DD198)!important;
+  border: none !important;
+  display: none;
+  height: 60px;
+  text-decoration: none;
 }
 
 .btn, .btn-primary {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
+  text-decoration: none;
 }
 
 /* --------------- Media Queries --------------- */
@@ -153,7 +191,8 @@ p {
     margin-top: 1em;
   }
   #hero {
-    margin-top: 4em;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   #hero_title {
     padding-top: 15px;
@@ -170,9 +209,10 @@ p {
     margin-bottom: 1em;
   }
   .contact-container {
-    margin-top: 2em;
-    margin-bottom: 3em;
+    margin-top: 40px;    
+    margin-bottom: 100px;
   }
+
   .description_div {
     display: block;
     margin: 15px auto 0 auto;
@@ -185,6 +225,17 @@ p {
   .featured-work-title {
     padding: 30px 0;
   }
+
+
+  .subheader-text {
+    padding-bottom: 20px;
+  }
+
+  .descriptionContainer {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 0px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -192,7 +243,7 @@ p {
     margin-top: 0em;
   }
   #hero {
-    margin-top: 3em;
+    margin-top: 0px;
   }
   #hero_title {
     padding-top: 15px;
@@ -206,8 +257,8 @@ p {
     margin-bottom: 5px;
   }
   .btn-block {
-    margin-bottom: 1em;
-    margin-top: .5em;
+    margin-bottom: 0px;
+    margin-top: 25px;
     width: 75%;
   }
   .contact-container {
@@ -218,6 +269,11 @@ p {
     padding: 30px 0;
   }
   .description_div {
-    width: 80%;
+    width: 75%;
+    margin-top: 25px;
+  }
+
+  #work {
+    padding-bottom: 0px;
   }
 }

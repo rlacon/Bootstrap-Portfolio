@@ -23,9 +23,9 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark py-2 fixed-top">
+    <nav class="navbar navbar-expand-sm py-3">
         <div class="container">
-            <a href="#hero">
+            <a href="#hero" class="text-dark text-decoration-none">
                 <h2 id="logo">&lt;R/L&gt;</h2>
             </a>
 
@@ -38,8 +38,8 @@
             <!-- Nav Links -->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a style="padding-right: 25px" class="nav-item nav-link" href="#work">Work</a>
-                    <a style="padding-right: 50px;" class="nav-item nav-link" href="#contact">Contact</a>
+                    <a style="padding-right: 25px" class="nav-item nav-link text-light" href="#work">Work</a>
+                    <a style="padding-right: 50px;" class="nav-item nav-link text-light" href="#contact">Contact</a>
 
                     <!-- Social Icons -->
                     <a style="margin-right: 20px;" target="_blank" class="btn btn-social-icon btn-lg btn-github"
@@ -54,7 +54,7 @@
 
     <!-- Hero section -->
 
-    <section id="hero">
+    <div id="hero">
         <div class="container">
             <br>
             <div class="row">
@@ -81,29 +81,36 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
 
     <!-- Description container -->
     <div class="container descriptionContainer">
         <div class="row">
             <div class="col-12">
-                <h1 class="contact-info">What I can do</h1>
+                <h1 class="subheader-text">Skills</h1>
             </div>
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                     <div class="description_div">
+                        <div class="icon_container">
+                            <img src="images/user.svg" class="description_icon">
+                        </div>
                         <p class="intro_description_title">UX Research</p>
-                        <p class="description-text">Competitive analyses, surveys, user interviews, and prototypes are
+                        <p class="description-text">Competitive analyses, surveys, user interviews, and wireframes are
                             some of the techniques that help me get to the root of the problem. I always ensure the
-                            design process is strategic and will address all user needs and business requirements.</p>
+                            design process is strategic and addresses all user needs and business requirements.</p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 
                     <div class="description_div">
+                        <div class="icon_container">
+                            <img src="images/ruler.svg" class="description_icon">
+                        </div>
                         <p class="intro_description_title">UI Design</p>
-                        <p class="description-text">My design background has made me grow attuned to crucial design elements
+                        <p class="description-text">My design background has made me grow attuned to crucial design
+                            elements
                             such as
                             typography, information architecture, and color theory. I strive for all my designs to look
                             visually pleasing and ensure they communicate information accessibly.</p>
@@ -112,8 +119,11 @@
                 <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
 
                     <div class="description_div">
+                        <div class="icon_container">
+                            <img src="images/code.svg" class="description_icon">
+                        </div>
                         <p class="intro_description_title">Coding</p>
-                        <p class="description-text">By combining all of these skills, I can quickly bring your products
+                        <p class="description-text">By combining all of these skills, I will quickly bring your products
                             to life using HTML, CSS, and JavaScript. My close attention to detail ensures your sites and
                             applications will resemble the design specifications as closely as possible.</p>
                     </div>
@@ -127,111 +137,137 @@
 
     <!-- Featured Work -->
 
-    <div class="album py-5" id="work">
+    <div class="album py-6" id="work">
         <div class="container">
             <div class="row">
+
                 <div class="col-md-12">
                     <h1 class="featured-work-title" style="text-decoration: none">Featured work</h1>
                     <br>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                    <a target="_blank" href="https://rlacon.github.io/project-1-app/index.html">
-                        <div class="shadow mb-4 bg-white rounded">
-                            <img class="card-img-top" src="images/write-haven-pic.png"
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                    <a target="_blank" href="https://rlacon.github.io/project-1-app/index.html"
+                        class="text-dark text-decoration-none">
+                        <div class="shadow-sm mb-3 bg-white rounded">
+                            <img class="card-img-top image" src="images/write-haven-pic.png"
                                 alt="Text displaying a hangman game">
                             <div class="card-body rounded" style="background-color: white">
-                                <div class="align-items-center">
-                                    <h5 class="card-text align-middle">Write Haven - Group Project</h5>
-                                </div>
+                                <h5 class="card-text align-middle">Write Haven</h5>
                             </div>
                         </div>
+                        <a class="github-links" href="https://github.com/rlacon/project-1-app">View Github Repo</a>
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                    <a target="_blank" href="https://rlacon.github.io/Word-Guess-Game/">
-                        <div class="shadow mb-4 bg-white rounded">
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                    <a target="_blank" href="https://rlacon.github.io/Word-Guess-Game/"
+                        class="text-dark text-decoration-none">
+                        <div class="shadow-sm mb-3 bg-white rounded">
                             <img class="card-img-top" src="images/word-guess-game-pic.png"
                                 alt="Text displaying a hangman game">
                             <div class="card-body rounded" style="background-color: white">
                                 <div class="align-items-center">
-                                    <h5 class="card-text align-middle">Word Guess Game - JavaScript</h5>
+                                    <h5 class="card-text align-middle">Word Guess Game</h5>
                                 </div>
                             </div>
                         </div>
+                        <a class="github-links" href="https://github.com/rlacon/word-guess-game">View Github Repo</a>
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                    <a target="_blank" href="http://www.laconspharmacy.com/">
-                        <div class="shadow mb-4 bg-white rounded">
-                            <img class="card-img-top" src="images/lacons-pharmacy-pic.png"
-                                alt="Screenshot of website for a pharmacy">
-                            <div class="card-body rounded" style="background-color: white">
-                                <div class="align-items-center">
-                                    <h5 class="card-text">Responsive Site - HTML/CSS</h5>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                    <a target="_blank" href="http://www.laconspharmacy.com/" class="text-dark text-decoration-none">
+                        <div class="shadow-sm mb-3 bg-white rounded">
+                            <div class="image-hover img-shadow-1">
+                                <img class="card-img-top" src="images/lacons-pharmacy-pic.png"
+                                    alt="Screenshot of website for a pharmacy">
+                                <div class="card-body rounded" style="background-color: white">
+                                    <div class="align-items-center">
+                                        <h5 class="card-text">Responsive Site</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <a class="github-links" href="https://github.com/laconspharmacy/laconspharmacy.github.io">View
+                            Github Repo</a>
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                    <a target="_blank" href="https://rlacon.github.io/unit-4-game/">
-                        <div class="shadow mb-4 bg-white rounded">
-                            <img class="card-img-top" src="images/crystal-collector-pic.png"
-                                alt="Row of crystals with game instructions and score listed">
-                            <div class="card-body rounded" style="background-color: white">
-                                <div class="align-items-center">
-                                    <h5 class="card-text">Clicker Game - jQuery</h5>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                    <a target="_blank" href="https://rlacon.github.io/unit-4-game/"
+                        class="text-dark text-decoration-none">
+                        <div class="shadow-sm mb-3 bg-white rounded">
+                            <div class="image-hover img-shadow-1">
+                                <img class="card-img-top" src="images/crystal-collector-pic.png"
+                                    alt="Row of crystals with game instructions and score listed">
+                                <div class="card-body rounded" style="background-color: white">
+                                    <div class="align-items-center">
+                                        <h5 class="card-text">Clicker Game</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <a class="github-links" href="https://github.com/rlacon/unit-4-game">View Github Repo</a>
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                    <a target="_blank" href="https://rlacon.github.io/TriviaGame/">
-                        <div class="shadow mb-4 bg-white rounded">
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                    <a target="_blank" href="https://rlacon.github.io/TriviaGame/"
+                        class="text-dark text-decoration-none">
+                        <div class="shadow-sm mb-3 bg-white rounded">
                             <img class="card-img-top" src="images/video-game-trivia-pic.png"
                                 alt="List of trivia questions and radio buttons">
                             <div class="card-body rounded" style="background-color: white">
                                 <div class="align-items-center">
-                                    <h5 class="card-text">Trivia Game - JavaScript</h5>
+                                    <h5 class="card-text">Trivia Game</h5>
                                 </div>
                             </div>
                         </div>
+                        <a class="github-links" href="https://github.com/rlacon/TriviaGame">View Github Repo</a>
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                    <a target="_blank" href="https://rlacon.github.io/giphy-api/">
-                        <div class="shadow mb-4 bg-white rounded">
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                    <a target="_blank" href="https://rlacon.github.io/giphy-api/"
+                        class="text-dark text-decoration-none">
+                        <div class="shadow-sm mb-3 bg-white rounded">
                             <img class="card-img-top" src="images/giphy-api-pic.png"
                                 alt="Lineup of giphy elements from the Simpsons TV show">
                             <div class="card-body rounded" style="background-color: white">
                                 <div class="align-items-center">
-                                    <h5 class="card-text">Giphy API - JavaScript</h5>
+                                    <h5 class="card-text">Giphy API</h5>
                                 </div>
                             </div>
                         </div>
+                        <a class="github-links" href="https://github.com/rlacon/giphy-api">View Github Repo</a>
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                    <a target="_blank" href="https://rlacon.github.io/train-time/">
-                        <div class="shadow mb-4 bg-white rounded">
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                    <a target="_blank" href="https://rlacon.github.io/train-time/"
+                        class="text-dark text-decoration-none">
+                        <div class="shadow-sm mb-3 bg-white rounded">
+
                             <img class="card-img-top" src="images/train-scheduluer-pic.png"
                                 alt="Train scheduler with train data and a form">
                             <div class="card-body rounded" style="background-color: white">
                                 <div class="align-items-center">
-                                    <h5 class="card-text">Train Scheduler - Firebase & JS</h5>
+                                    <h5 class="card-text">Train Scheduler</h5>
                                 </div>
                             </div>
                         </div>
+                        <a class="github-links" href="https://github.com/rlacon/train-time">View Github Repo</a>
                     </a>
                 </div>
+
 
             </div>
         </div>
@@ -241,18 +277,20 @@
         <div class="container" id="contact">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="contact-info">If you'd like to contact me</h1>
+                    <h1 class="subheader-text">Contact</h1>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <a href="mailto:ryan.lacon@gmail.com"><button type="button"
-                            class="btn btn-primary btn-lg btn-block">ryan.lacon@gmail.com</button></a>
+                            class="btn btn-primary btn-lg btn-block text-decoration-none">ryan.lacon@gmail.com</button></a>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                    <a href="https://www.linkedin.com/in/ryanlacon" target="blank"><button type="button"
-                            class="btn btn-primary btn-lg btn-block">View my LinkedIn profile</button></a>
+                    <a href="https://www.linkedin.com/in/ryanlacon" target="blank"
+                        class="text-dark text-decoration-none"><button type="button"
+                            class="btn btn-primary btn-lg btn-block text-decoration-none">View my LinkedIn
+                            profile</button></a>
                 </div>
             </div>
         </div>
