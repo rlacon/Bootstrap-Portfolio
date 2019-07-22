@@ -25,7 +25,7 @@
 }
 
 header {
-  background: linear-gradient(160deg, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5));
+  background: linear-gradient(160deg, rgba(29, 143, 225, 0.8), rgba(98, 94, 177, 0.8));
   z-index: 9999;
   height: 68px;
   position: fixed;
@@ -39,7 +39,7 @@ header {
 }
 
 .navbar {
-  background: linear-gradient(160deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9));
+  background: linear-gradient(160deg, rgba(29, 143, 225, 0.9), rgba(98, 94, 177, 0.9));
 }
 
 /* --------------- Images --------------- */
@@ -141,7 +141,7 @@ p {
 }
 
 .featured-work-title {
-  color: #667EEA;
+  color: #1D8FE1;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-align: center;
@@ -271,7 +271,7 @@ p {
     padding: 30px 0;
   }
   .description_div {
-    width: 75%;
+    width: 80%;
     margin-top: 25px;
   }
   #work {
