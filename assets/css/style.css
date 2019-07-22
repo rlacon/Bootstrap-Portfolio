@@ -3,6 +3,7 @@
 #hero {
   margin-top: 125px;
   margin-bottom: 100px;
+  background-color: white;
 }
 
 .album {
@@ -70,6 +71,7 @@ header {
 
 .card-text {
   font-family: 'Lato', sans-serif;
+  color: #333333;
 }
 
 .description-text {
