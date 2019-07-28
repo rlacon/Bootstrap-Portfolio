@@ -1,6 +1,4 @@
-
 /* --------------- Primary Elements --------------- */
-
 #hero {
   margin-top: 125px;
   margin-bottom: 100px;
@@ -43,7 +41,6 @@ header {
   background: linear-gradient(160deg, rgba(29, 143, 225, 0.9), rgba(98, 94, 177, 0.9));
 }
 
-
 /* --------------- Images --------------- */
 
 #ryanPic {
@@ -69,7 +66,6 @@ header {
   padding-right: 15px;
 }
 
-
 /* --------------- Card Elements --------------- */
 
 .card-text {
@@ -80,6 +76,36 @@ header {
 .description-text {
   color: white;
   font-family: 'Lato', sans-serif;
+}
+
+.card2 {
+  top: 0px;
+  position: relative;
+  text-decoration: none !important;
+  z-index: 0;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+
+}
+
+.card2:hover {
+  transition: all 0.2s ease-out;
+  top: -4px;
+}
+
+.card2:before {
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  transform: scale(2);
+  transform-origin: 50% 50%;
+  transition: transform 0.15s ease-out;
+}
+
+.card2:hover:before {
+  transform: scale(2.15);
 }
 
 .intro_description_title {
@@ -104,8 +130,7 @@ header {
   -webkit-transform: scale(1.13);
   -ms-transform: scale(1.13);
   transform: scale(1.13);
-  transition:all 0.5s ease;
-
+  transition: all 0.5s ease;
 }
 
 /* --------------- Text Elements --------------- */
@@ -196,9 +221,10 @@ p {
   text-decoration: none;
   background: linear-gradient(320deg, #00D0B8, #7DD198)!important;
 }
+
 .btn:hover {
-  filter:contrast(125%);  
-  transition:all 0.5s ease;
+  filter: contrast(125%);
+  transition: all 0.5s ease;
 }
 
 .btn, .btn-primary {
@@ -258,14 +284,12 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-
   body {
     width: 97%;
   }
   .album {
     margin-top: 0em;
   }
-
   #hero_title {
     padding-top: 15px;
   }
