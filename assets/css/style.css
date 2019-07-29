@@ -152,6 +152,16 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
+.github-links {
+  width:100%;
+  margin-left:0;
+  margin-right:0;
+  padding-left:0;
+  padding-right:0;
+  display:block;
+  text-align:center;
+}
+
 .text-lg-left {
   color: #333333;
   font-family: 'Lato', sans-serif;
