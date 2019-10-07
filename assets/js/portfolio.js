@@ -51,6 +51,17 @@ setInterval(function () {
     }
 }, 250);
 
+var chosenWord = "design";
+
+function checkPass() {
+    var promptInput = prompt("Please enter the password to see more work");
+    if (promptInput === chosenWord) {
+        window.location.replace("https://drive.google.com/drive/folders/10kEqGoeKJjeI-PrRs_RG2ohjIoHO-c-C?usp=sharing");
+    } else {
+        alert("Incorrect password!")
+    }
+}
+
 function hasScrolled() {
     var st = $(this).scrollTop();
 
