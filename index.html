@@ -16,6 +16,7 @@
     <link href="assets/css/font-awesome.css" rel="stylesheet">
 
     <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="bootstrap-social.css" rel="stylesheet">
@@ -55,7 +56,8 @@
                                 src="images/external.svg"></a>
                         <a style="padding-right: 15px" class="nav-item nav-link text-light" href="#work">Work</a>
                         <a style="padding-right: 15px;" class="nav-item nav-link text-light" href="#contact">Contact</a>
-                        <a style="padding-right: 30px; text-decoration: line-through; cursor: pointer;" class="nav-item nav-link text-light" onclick="checkPass()">Confidential</a>
+                        <a style="padding-right: 30px; text-decoration: line-through; cursor: pointer;"
+                            class="nav-item nav-link text-light" onclick="checkPass()">Confidential</a>
 
                         <!-- Social Icons -->
                         <a style="margin-right: 20px;" target="_blank" class="btn btn-social-icon btn-lg btn-github"
@@ -158,13 +160,25 @@
     <div class="album py-6" id="work">
         <div class="container">
             <div class="row">
-
-                <div class="col-md-12">
-                    <h1 class="featured-work-title" style="text-decoration: none">Featured work</h1>
+                <div class="featured-work-header">
+                    <div class="col-auto">
+                        <h1 class="featured-work-title" style="text-decoration: none">Featured work</h1>
+                    </div>
+                    <div class="col-auto">
+                        <select class="select-css">
+                            <option value="developerWork" selected>Developer Work </option>
+                            <option value="designerWork">UX Design Work </option>
+                        </select>
+                    </div>
                     <br>
                 </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                <!-- Developer Work -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 developerWork">
                     <a class="card2" target="_blank" href="https://ghost-writer.herokuapp.com/"
                         class="text-dark text-decoration-none">
                         <div class="shadow-sm mb-3 bg-white rounded">
@@ -183,7 +197,7 @@
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 developerWork">
                     <a class="card2" target="_blank" href="https://rlacon-book-search.herokuapp.com/"
                         class="text-dark text-decoration-none">
                         <div class="shadow-sm mb-3 bg-white rounded">
@@ -198,7 +212,7 @@
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 developerWork">
                     <a class="card2" target="_blank" href="https://game-matching-app.herokuapp.com/"
                         class="text-dark text-decoration-none">
                         <div class="shadow-sm mb-3 bg-white rounded">
@@ -216,7 +230,7 @@
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 developerWork">
                     <a class="card2" target="_blank" href="https://rlacon.github.io/project-1-app/index.html"
                         class="text-dark text-decoration-none">
                         <div class="shadow-sm mb-3 bg-white rounded">
@@ -231,7 +245,7 @@
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 developerWork">
                     <a class="card2" target="_blank" href="https://arcane-lake-18114.herokuapp.com/"
                         class="text-dark text-decoration-none">
                         <div class="shadow-sm mb-3 bg-white rounded">
@@ -250,7 +264,7 @@
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 developerWork">
                     <a class="card2" target="_blank" href="https://github.com/rlacon/cli-app"
                         class="text-dark text-decoration-none">
                         <div class="shadow-sm mb-3 bg-white rounded">
@@ -268,7 +282,7 @@
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 developerWork">
                     <a class="card2" target="_blank" href="https://github.com/rlacon/liri-node-app"
                         class="text-dark text-decoration-none">
                         <div class="shadow-sm mb-3 bg-white rounded">
@@ -283,7 +297,7 @@
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 developerWork">
                     <a class="card2" target="_blank" href="http://www.laconspharmacy.com/"
                         class="text-dark text-decoration-none">
                         <div class="shadow-sm mb-3 bg-white rounded">
@@ -303,7 +317,7 @@
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 developerWork">
                     <a class="card2" target="_blank" href="https://rlacon.github.io/giphy-api/"
                         class="text-dark text-decoration-none">
                         <div class="shadow-sm mb-3 bg-white rounded">
@@ -315,12 +329,13 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="github-links" target="_blank" href="https://github.com/rlacon/giphy-api">View Github
+                        <a class="github-links" target="_blank" href="https://github.com/rlacon/giphy-api">View
+                            Github
                             Repo</a>
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 developerWork">
                     <a class="card2" target="_blank" href="https://rlacon.github.io/unit-4-game/"
                         class="text-dark text-decoration-none">
                         <div class="shadow-sm mb-3 bg-white rounded">
@@ -334,12 +349,13 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="github-links" target="_blank" href="https://github.com/rlacon/unit-4-game">View Github
+                        <a class="github-links" target="_blank" href="https://github.com/rlacon/unit-4-game">View
+                            Github
                             Repo</a>
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 developerWork">
                     <a class="card2" target="_blank" href="https://rlacon.github.io/train-time/"
                         class="text-dark text-decoration-none">
                         <div class="shadow-sm mb-3 bg-white rounded">
@@ -352,12 +368,13 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="github-links" target="_blank" href="https://github.com/rlacon/train-time">View Github
+                        <a class="github-links" target="_blank" href="https://github.com/rlacon/train-time">View
+                            Github
                             Repo</a>
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 developerWork">
                     <a class="card2" target="_blank" href="https://rlacon.github.io/TriviaGame/"
                         class="text-dark text-decoration-none">
                         <div class="shadow-sm mb-3 bg-white rounded">
@@ -369,12 +386,13 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="github-links" target="_blank" href="https://github.com/rlacon/TriviaGame">View Github
+                        <a class="github-links" target="_blank" href="https://github.com/rlacon/TriviaGame">View
+                            Github
                             Repo</a>
                     </a>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 projects">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 developerWork">
                     <a class="card2" target="_blank" href="https://rlacon.github.io/Word-Guess-Game/"
                         class="text-dark text-decoration-none">
                         <div class="shadow-sm mb-3 bg-white rounded">
@@ -390,9 +408,71 @@
                             Github Repo</a>
                     </a>
                 </div>
+
+                <!-- Featured Designer Work -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 designerWork">
+                    <a class="card2" target="_blank"
+                        href="https://www.behance.net/gallery/84126977/Womens-Fitness-Apparel-Review-App"
+                        class="text-dark text-decoration-none">
+                        <div class="shadow-sm mb-3 bg-white rounded">
+                            <img class="card-img-top" src="images/haelex-case-study-pic.png"
+                                alt="Screen displaying wireframes for mobile app">
+                            <div class="card-body rounded" style="background-color: white">
+                                <div class="align-items-center">
+                                    <h5 class="card-text align-middle">Haelex Case Study (Behance)</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 designerWork">
+                    <a class="card2" target="_blank" href="https://www.behance.net/gallery/60312183/Move-O-Matic"
+                        class="text-dark text-decoration-none">
+                        <div class="shadow-sm mb-3 bg-white rounded">
+                            <img class="card-img-top" src="images/moveomatic-case-study-pic.png"
+                                alt="Logo for Move-O-Matic project in cartoonish letters with webcam lens for the 'o' letter">
+                            <div class="card-body rounded" style="background-color: white">
+                                <div class="align-items-center">
+                                    <h5 class="card-text align-middle">Move-O-Matic (Behance)</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 designerWork">
+                    <a class="card2" target="_blank"
+                        href="https://www.behance.net/gallery/57726191/Improving-the-SEPTA-Experience"
+                        class="text-dark text-decoration-none">
+                        <div class="shadow-sm mb-3 bg-white rounded">
+                            <img class="card-img-top" src="images/SEPTA-case-study-pic.png"
+                                alt="Background image of SEPTA subway map with text saying 'Improving the SEPTA experience'">
+                            <div class="card-body rounded" style="background-color: white">
+                                <div class="align-items-center">
+                                    <h5 class="card-text align-middle">SEPTA App (Behance)</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 designerWork">
+                    <a class="card2" target="_blank" href="https://www.behance.net/gallery/59760777/Write-Haven"
+                        class="text-dark text-decoration-none">
+                        <div class="shadow-sm mb-3 bg-white rounded">
+                            <img class="card-img-top" src="images/write-haven-case-study-pic.png"
+                                alt="Logo that says 'Write Haven - Become a better writer today' with a glowing halo on top">
+                            <div class="card-body rounded" style="background-color: white">
+                                <div class="align-items-center">
+                                    <h5 class="card-text align-middle">Write Haven App (Behance)</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+    </div>
+
 
     <div class="contact-container">
         <div class="container" id="contact">

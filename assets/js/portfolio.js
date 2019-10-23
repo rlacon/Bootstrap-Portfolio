@@ -1,3 +1,4 @@
+// Smooth scroll effects
 $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
@@ -34,6 +35,39 @@ $('a[href*="#"]')
         }
     });
 
+// ----------------------------------------
+
+// Password checker for private work
+var chosenWord = "design";
+
+function checkPass() {
+    var promptInput = prompt("Please enter the password to see more work");
+    if (promptInput === chosenWord) {
+        window.location.replace("https://drive.google.com/drive/folders/10kEqGoeKJjeI-PrRs_RG2ohjIoHO-c-C?usp=sharing");
+    } else {
+        alert("Incorrect password!")
+    }
+}
+
+// ----------------------------------------
+
+// Show/hide developer/design work
+
+$("select").change(function(){
+    $( "select option:selected").each(function(){
+        if($(this).attr("value")=="developerWork"){
+            $(".designerWork").hide();
+            $(".developerWork").show();
+        }
+        if($(this).attr("value")=="designerWork"){
+            $(".developerWork").hide();
+            $(".designerWork").show();
+        }
+    });
+}).change();
+
+// ----------------------------------------
+
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
@@ -50,17 +84,6 @@ setInterval(function () {
         didScroll = false;
     }
 }, 250);
-
-var chosenWord = "design";
-
-function checkPass() {
-    var promptInput = prompt("Please enter the password to see more work");
-    if (promptInput === chosenWord) {
-        window.location.replace("https://drive.google.com/drive/folders/10kEqGoeKJjeI-PrRs_RG2ohjIoHO-c-C?usp=sharing");
-    } else {
-        alert("Incorrect password!")
-    }
-}
 
 function hasScrolled() {
     var st = $(this).scrollTop();
