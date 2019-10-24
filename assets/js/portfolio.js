@@ -52,7 +52,6 @@ function checkPass() {
 // ----------------------------------------
 
 // Show/hide developer/design work
-
 $("select").change(function(){
     $( "select option:selected").each(function(){
         if($(this).attr("value")=="developerWork"){

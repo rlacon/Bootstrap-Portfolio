@@ -385,4 +385,11 @@ p {
   #work {
     padding-bottom: 0px;
   }
+  .featured-work-header {
+    display: block;
+  }
+
+  .select-css {
+    margin-top: 20px;
+  }
 }
